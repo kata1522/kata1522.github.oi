@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sonido y Dj | Quince Años Élite</title>
+    <link rel="stylesheet" href="3coreografia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="img/logo.avif" alt="edwing">
+            </a>
+            
+            <nav class="main-nav">
+                <button class="hamburger" aria-label="Abrir menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="1inicio.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="https://wa.me/3504826821?text=Hola quiero más información" class="nav-link cta-button">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Sección Principal -->
+    <section class="coreografia-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Tecnologia profesional</h1>
+            </div>
+
+            <!-- Grid de Videos -->
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <article class="video-card">
+                    <div class="video-preview" 
+                        data-video="videos/video1.mp4"
+                        style="background-image: url('fondo1.png')">
+                        <button class="play-button">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="equipo-info">
+                        <h3>Sistema de Sonido Elite Pro</h3>
+                        <ul class="especificaciones">
+                            <li><i class="fas fa-volume-up"></i> 15,000 Watts</li>
+                            <li><i class="fas fa-microphone"></i> 8 Micrófonos inalámbricos</li>
+                            <li><i class="fas fa-lightbulb"></i> Iluminación LED inteligente</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Video 2 -->
+                <article class="video-card">
+                    <div class="video-preview" 
+                        data-video="videos/video2.mp4"
+                        style="background-image: url('img/prueba.webp')">
+                        <button class="play-button">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="equipo-info">
+                        <h3>DJ Professional Mix</h3>
+                        <ul class="especificaciones">
+                            <li><i class="fas fa-volume-up"></i> 15,000 Watts</li>
+                            <li><i class="fas fa-microphone"></i> 8 Micrófonos inalámbricos</li>
+                            <li><i class="fas fa-lightbulb"></i> Iluminación LED inteligente</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="video-lightbox">
+        <div class="lightbox-content">
+            <video id="video-player" controls>
+                <source src="" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <button class="close-lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+<!-- footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Columna 1 -->
+            <div class="footer-col">
+                <img src="img/logo.avif" alt="Logo" class="footer-logo">
+                <p>Transformando sueños en realidades desde 2010</p>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#politicas">Políticas de Privacidad</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#soporte">Soporte 24/7</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/02luis.corredor10/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/luis.corredor.3994?locale=es_LA"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@luiscorredor61"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu mejor correo" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Quince Años Élite. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#terminos">Términos de Servicio</a>
+                <a href="#cookies">Política de Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+<span class="close-btn">&times;</span>
+<span class="prev-btn"><i class="fas fa-chevron-left"></i></span>
+<span class="next-btn"><i class="fas fa-chevron-right"></i></span>
+<div class="lightbox-content">
+    <img id="lightbox-image" src="" alt="Vestido ampliado">
+    <div class="image-info">
+        <h3 id="image-title"></h3>
+        <p id="image-description"></p>
+    </div>
+</div>
+</div>
+
+    <script src="3coreografia.js"></script>
+</body>
+</html>
